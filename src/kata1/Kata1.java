@@ -5,6 +5,8 @@
  */
 package kata1;
 
+import java.util.GregorianCalendar;
+
 /**
  *
  * @author Usuario
@@ -16,6 +18,10 @@ public class Kata1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        Person a = new Person("Pepe",new GregorianCalendar(1971,11,09));
+        GregorianCalendar fecha = new GregorianCalendar(2020,03,12);
+        System.out.println(a.getName() + " tiene " + a.getAge(fecha) + " años");
     }
     
 }
